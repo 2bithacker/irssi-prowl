@@ -247,5 +247,6 @@ sub _pushover {
     $options{user} = $config{userkey};
     $options{token} = $config{apikey};
 
-    $pushover->push(%options);
+    $pushover->message(%options);
 }
+
